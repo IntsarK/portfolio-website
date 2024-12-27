@@ -216,8 +216,11 @@ h1 {
   #contact-form textarea,
   #contact-form input[type="submit"] {
     font-size: 12px;
-    padding: 5px;
+    padding: 8px; /* Increased padding for better interaction */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    border-radius: 4px; /* Optional: for rounded corners */
   }
+  
   .page-header {
     font-size: 16px;  
     padding: 10px;
@@ -273,8 +276,10 @@ h1 {
   }
   #contact-form label {
     display: block;
-    margin-bottom: 5px;
-    font-size: 12px;
+    margin-bottom: 8px; /* Increased spacing for better readability */
+    font-size: 14px; /* Adjusted font size for better visibility */
+    font-weight: bold; /* Optional: makes the label text more prominent */
+    color: #333; /* Optional: changes text color for better contrast */
   }
   .page-header {
     padding: 10px;
