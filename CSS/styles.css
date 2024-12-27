@@ -133,6 +133,51 @@ h1 {
   text-align: center;
 }
 
+/*contact page*/
+#contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:var(--lightpink-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+#contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input and textarea styling */
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Submit button styling */
+#contact-form input[type="submit"] {
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
 /*about me*/
 header{
   border-bottom: 2px solid #ccc;
@@ -212,19 +257,21 @@ h1 {
     width: 20px;
     height: 20px;
   }
-  #contact-form input,
-  #contact-form textarea,
-  #contact-form input[type="submit"] {
-    font-size: 12px;
-    padding: 8px; /* Increased padding for better interaction */
-    border: 1px solid #ccc; /* Add a border for better visibility */
-    border-radius: 4px; /* Optional: for rounded corners */
-  }
-  
   .page-header {
     font-size: 16px;  
     padding: 10px;
   }
+  #contact-form {
+    padding: 15px;
+  }
+
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form input[type="submit"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
 }
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
@@ -248,7 +295,16 @@ h1 {
     width: 25px;
     height: 25px;
   }
+  #contact-form {
+    padding: 18px;
+  }
 
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form input[type="submit"] {
+    font-size: 15px;
+    padding: 9px;
+  }
 }
 @media all and (max-width: 750px) {
   .grid {
@@ -274,17 +330,20 @@ h1 {
     gap: 10px;
     margin-top: 10px;
   }
-  #contact-form label {
-    display: block;
-    margin-bottom: 8px; /* Increased spacing for better readability */
-    font-size: 14px; /* Adjusted font size for better visibility */
-    font-weight: bold; /* Optional: makes the label text more prominent */
-    color: #333; /* Optional: changes text color for better contrast */
-  }
   .page-header {
     padding: 10px;
     flex-direction: column;
     align-items: flex-start;
+  }
+  #contact-form {
+    padding: 20px;
+  }
+
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form input[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
   }
 }
 /* sun and cloud move*/
